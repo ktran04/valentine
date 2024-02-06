@@ -17,6 +17,10 @@
         h1 {
             color: #ffff;
         }
+        h2 {
+            color: #ffff;
+            text-align: center;
+        }
         p {
             margin-top: 20px;
             font-size: 18px;
@@ -26,12 +30,13 @@
 <body>
     <h1>Will you <span style="color: #e74c3c;">B</span>e <span style="color: #e74c3c;">M</span>y Valentin<span style="color: #e74c3c;">E</span>?</h1>
     <p id="result"></p>
-
+    <h2><br><br><br><br><br><br>Have I known you 20 seconds or 20 years?<br>Can I go where you go?<br>Can we always be this close forever and ever?</h2>
+    <audio id="valentineAudio" controls>
     <script>
         // Function to ask Valentine and display the result
         function askValentine() {
             var resultElement = document.getElementById('result');
-            var response = prompt('Have I known you 20 seconds or 20 years? \nCan I go where you go? \nCan we always be this close forever and ever? \n(Type "Yes" or "Yes")');
+            var response = prompt('Will you Be My valentinE? (Type "Yes" or "Yes")');
             response = response.toLowerCase(); // Convert the response to lowercase for case-insensitivity
 
             if (response === 'yes' || response === 'yes') {
